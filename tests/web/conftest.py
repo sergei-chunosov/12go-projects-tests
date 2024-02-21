@@ -42,7 +42,7 @@ def setup_browser(request):
         command_executor=f"https://{slogin}:{spassword}@selenoid.autotests.cloud/wd/hub",
         options=options
     )
-    browser.config.driver = webdriver
+    browser.config.driver = driver
 
     browser.config.base_url = "https://12go.asia/"
     browser.config.window_width = '1200'
