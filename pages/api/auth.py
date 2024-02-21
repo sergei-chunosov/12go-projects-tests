@@ -15,7 +15,7 @@ class Auth:
         jsonAuth = json.dumps({"email": user_name, "password": password}, ensure_ascii=False).encode('utf8')
         url = 'https://12go.asia/api/nuxt/en/user/auth'
         session.post(url, jsonAuth)
-        cookies = session.cookies.get('autht4')
+        cookies = session.cookies.get_dict()
         return cookies
 
 
