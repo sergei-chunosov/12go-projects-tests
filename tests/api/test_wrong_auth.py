@@ -1,7 +1,11 @@
 import pytest
-
 from pages.api.auth import auth
 import allure
+from utils.marks import layer
+
+pytestmark = [
+    layer("api")
+]
 
 @pytest.mark.api
 def test_wrong_auth():
