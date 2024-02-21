@@ -1,8 +1,7 @@
 import os
 from appium.options.android import UiAutomator2Options
 from pydantic import BaseModel
-# from utils import file
-from utils import file
+from asia_12go_projects_tests.utils import file
 
 
 class Config(BaseModel):

@@ -1,5 +1,5 @@
 def abs_path_from_project(relative_path: str):
-    import utils
+    import asia_12go_projects_tests.utils
     from pathlib import Path
 
     return (
