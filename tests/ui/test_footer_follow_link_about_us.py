@@ -1,7 +1,7 @@
 import allure
 import pytest
-from pages.ui.footer_follow_link_about_us import footer_link
-from utils.marks import layer
+from asia_12go_projects_tests.pages.ui.footer_follow_link_about_us import footer_link
+from asia_12go_projects_tests.utils.marks import layer
 
 pytestmark = [
     layer("web")

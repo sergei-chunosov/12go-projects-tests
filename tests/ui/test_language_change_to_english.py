@@ -1,7 +1,7 @@
 import pytest
-from pages.ui.language_change_to_english import language_change
+from asia_12go_projects_tests.pages.ui.language_change_to_english import language_change
 import allure
-from utils.marks import layer
+from asia_12go_projects_tests.utils.marks import layer
 
 pytestmark = [
     layer("web")

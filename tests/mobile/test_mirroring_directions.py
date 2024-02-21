@@ -1,7 +1,6 @@
 import pytest
-
-from pages.mobile.set_direction import set_directions
-from pages.mobile.mirroring_direction import mirroringdirection
+from asia_12go_projects_tests.pages.mobile.set_direction import set_directions
+from asia_12go_projects_tests.pages.mobile.mirroring_direction import mirroringdirection
 import allure
 
 

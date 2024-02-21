@@ -1,8 +1,8 @@
 import pytest
-from data.ui.user_data import flight
-from pages.ui.add_flight_to_cart import search_tickets
+from asia_12go_projects_tests.data.ui.user_data import flight
+from asia_12go_projects_tests.pages.ui.add_flight_to_cart import search_tickets
 import allure
-from utils.marks import layer
+from asia_12go_projects_tests.utils.marks import layer
 
 pytestmark = [
     layer("web")

@@ -1,6 +1,5 @@
 import pytest
-
-from pages.mobile.passengers_count import passengerscount
+from asia_12go_projects_tests.pages.mobile.passengers_count import passengerscount
 import allure
 
 

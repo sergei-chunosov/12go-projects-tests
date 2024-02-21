@@ -1,7 +1,7 @@
 import pytest
-from pages.ui.previous_order import previouseorder
+from asia_12go_projects_tests.pages.ui.previous_order import previouseorder
 import allure
-from utils.marks import layer
+from asia_12go_projects_tests.utils.marks import layer
 
 pytestmark = [
     layer("web")
