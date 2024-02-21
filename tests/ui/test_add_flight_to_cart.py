@@ -1,13 +1,16 @@
 import pytest
-
 from data.ui.user_data import flight
 from pages.ui.add_flight_to_cart import search_tickets
 import allure
+from utils.marks import layer
+
+pytestmark = [
+    layer("web")
+]
 
 
 @pytest.mark.web
 def test_add_ticket():
-
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         search_tickets.open()
 

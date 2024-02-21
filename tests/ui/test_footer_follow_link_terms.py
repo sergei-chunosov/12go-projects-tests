@@ -1,8 +1,11 @@
 import allure
 import pytest
-
 from pages.ui.footer_follow_link_terms import footer_terms
+from utils.marks import layer
 
+pytestmark = [
+    layer("web")
+]
 
 @pytest.mark.web
 def test_link_about_us():

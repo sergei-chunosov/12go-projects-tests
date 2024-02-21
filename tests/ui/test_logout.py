@@ -1,7 +1,11 @@
 import pytest
-
 from pages.ui.logout import logout
 import allure
+from utils.marks import layer
+
+pytestmark = [
+    layer("web")
+]
 
 
 @pytest.mark.web
