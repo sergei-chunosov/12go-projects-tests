@@ -1,9 +1,7 @@
-import os
 import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selene import browser
-from utils import attach
+
+from asia_12go_projects_tests.utils import attach
 from dotenv import load_dotenv
 
 
@@ -20,6 +18,7 @@ DEFAULT_BROWSER_VERSION = '100.0'
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
+
 
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
@@ -42,11 +41,15 @@ def setup_browser(request):
         command_executor=f"https://{slogin}:{spassword}@selenoid.autotests.cloud/wd/hub",
         options=options
     )
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 1})
+
+    driver = webdriver.Chrome(chrome_options)
     browser.config.driver = driver
 
     browser.config.base_url = "https://12go.asia/"
-    browser.config.window_width = '1920'
-    browser.config.window_height = '1080'
+    browser.config.window_width = '1280'
+    browser.config.window_height = '720'
     browser.config.timeout = 4
 
     yield browser
