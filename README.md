@@ -57,7 +57,7 @@ Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram
   ```
 4. Для запусков тестов локально используйте команд:
   ```bash
-  pytest -sv -m mobile tests/mobile/ --context='local'
+  pytest -sv -m mobile tests/mobile/
   pytest -sv -m web
   pytest -sv -m api
   ```
