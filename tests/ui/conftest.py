@@ -1,7 +1,10 @@
+import os
 import pytest
 from selene import browser
 from asia_12go_project.utils import attach
 from dotenv import load_dotenv
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
