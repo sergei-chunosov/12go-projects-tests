@@ -1,14 +1,10 @@
 from selene import browser, have
-# from utils.auth import get_cookie
 
 
 class ChangeCurrency:
 
     def open(self):
         browser.open('en')
-        # cookies = get_cookie()
-        # browser.driver.add_cookie({'name': 'autht4', 'value': cookies})
-        # browser.open('en')
 
     def change_currency(self):
         browser.element('.link.curr-selector').click()
