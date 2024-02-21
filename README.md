@@ -70,6 +70,9 @@ allure serve allure-results
 ### Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
 ![This is an image](/resources/screens/bot.png)
 
+### Интеграция с jira
+![This is an image](/resources/screens/jira.png)
 
 ### Пример видеозаписи прохождения мобильных тестов тестов
 ![This is an image](/resources/screens/mobile.gif)
+
