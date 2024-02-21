@@ -31,10 +31,9 @@ Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram
 <img src="/resources/allure.png" alt="Image 6" width="45" height="45"><img src="/resources/telegram.svg" alt="Image 7" width="45" height="45">
 
 # Запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/2go-projects-tests/">Ссылка на проект в Jenkins</a>
 
 ### Для запуска автотестов в Jenkins
-#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/test-12go/">проект</a>
+#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/tests_12go/">проект</a>
 
 ![This is an image](/resources/screens/Jenkins_main.png)
 
