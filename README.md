@@ -8,6 +8,7 @@
 - [x] Проверка авторизации
 - [x] Проверка logout
 - [x] Проверка страниц сайта
+- [x] Проверка изменения профиля пользователя
 
 #### Список проверок, реализованных в mobile автотестах
 - [x] Проверка смены даты отправления
@@ -26,8 +27,8 @@
 ### Проект реализован с использованием
 Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram 
 
-<img src="/design/python-original.svg" alt="Image 1" width="45" height="45"><img src="/design/pytest-original.svg" alt="Image 2" width="45" height="45"><img src="/design/PyCharm_Icon.svg" alt="Image 3" width="45" height="45"><img src="/design/selenoid.png" alt="Image 4" width="45" height="45"><img src="/design/jenkins-original.svg" alt="Image 5" width="45" height="45">
-<img src="/design/allure.png" alt="Image 6" width="45" height="45"><img src="/design/telegram.svg" alt="Image 7" width="45" height="45">
+<img src="/resources/python-original.svg" alt="Image 1" width="45" height="45"><img src="/resources/pytest-original.svg" alt="Image 2" width="45" height="45"><img src="/design/PyCharm_Icon.svg" alt="Image 3" width="45" height="45"><img src="/design/selenoid.png" alt="Image 4" width="45" height="45"><img src="/design/jenkins-original.svg" alt="Image 5" width="45" height="45">
+<img src="/resources/allure.png" alt="Image 6" width="45" height="45"><img src="/resources/telegram.svg" alt="Image 7" width="45" height="45">
 
 # Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/2go-projects-tests/">Ссылка на проект в Jenkins</a>
