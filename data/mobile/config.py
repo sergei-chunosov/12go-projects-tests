@@ -15,6 +15,7 @@ class Config(BaseModel):
     platformVersion: str = os.getenv('platformVersion')
     userName: str = os.getenv('LOGIN')
     accessKey: str = os.getenv('PASSWORD')
+    bstack_app_id: str = os.getenv('BSTACK_APP_ID')
 
     def to_driver_options(self, context):
 
@@ -24,20 +25,14 @@ class Config(BaseModel):
             options.set_capability('platformName', self.platformName)
             options.set_capability('remote_url', self.remote_url)
             options.set_capability('app', file.abs_path_from_project(self.app))
-            # options.set_capability( 'browserName', 'Chrome')
-            # options.set_capability('headspin:autoDownloadChromedriver', 'true')
-
-
-            # options.set_capability('appWaitActivity', self.appWaitActivity)
 
         if context == 'bs':
             options.set_capability('remote_url', self.remote_url)
             options.set_capability('deviceName', self.device_name)
             options.set_capability('platformName', self.platformName)
             options.set_capability('platformVersion', self.platformVersion)
-            # options.set_capability('browserName', 'Chrome')
-            # options.set_capability('appWaitActivity', self.appWaitActivity)
             options.set_capability('app', self.app)
+            options.set_capability('bstack_app_id', self.bstack_app_id)
             options.set_capability(
                 'bstack:options', {
                     'projectName': 'First Python project',

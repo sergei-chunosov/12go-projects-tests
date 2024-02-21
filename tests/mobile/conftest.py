@@ -41,7 +41,6 @@ def android_mobile_management(context):
 
     browser.config.timeout = 12.0
 
-    # browser.config.base_url = "https://12go.asia/"
 
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext)
