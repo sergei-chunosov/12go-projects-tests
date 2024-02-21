@@ -7,4 +7,4 @@ import allure
 def test_auth():
     with allure.step('Проверяем успешную аутентификацию через API'):
         cookies = auth.get_cookie()
-        assert len(cookies) > 0
+        assert len(cookies) > 0, cookies
