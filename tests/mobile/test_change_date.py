@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_projects_tests.pages.mobile.change_date import changedate
+from asia_12go_project.pages.mobile.change_date import changedate
 import allure
 
 

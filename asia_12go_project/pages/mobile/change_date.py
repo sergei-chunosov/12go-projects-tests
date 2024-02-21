@@ -1,6 +1,6 @@
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have
-from asia_12go_projects_tests.utils.set_date import date_halper
+from asia_12go_project.utils.set_date import date_halper
 
 
 class ChangeDate:

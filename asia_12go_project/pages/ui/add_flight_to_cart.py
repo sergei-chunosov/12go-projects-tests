@@ -2,7 +2,7 @@ from time import sleep
 
 from selene import browser, have, command
 from datetime import date, timedelta
-from data.ui.user_data import Flight
+from asia_12go_project.data.ui.user_data import Flight
 
 
 class SearchTickets:

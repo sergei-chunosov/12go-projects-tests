@@ -4,7 +4,7 @@ import pytest
 from appium import webdriver
 from dotenv import load_dotenv
 from selene import browser, support
-from asia_12go_projects_tests.utils.attach import add_screenshot, add_xml, attach_bstack_video
+from asia_12go_project.utils.attach import add_screenshot, add_xml, attach_bstack_video
 
 
 def pytest_addoption(parser):

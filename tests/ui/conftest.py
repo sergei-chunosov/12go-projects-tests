@@ -1,6 +1,6 @@
 import pytest
 from selene import browser
-from asia_12go_projects_tests.utils import attach
+from asia_12go_project.utils import attach
 from dotenv import load_dotenv
 
 

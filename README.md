@@ -35,14 +35,14 @@ Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram
 ### Для запуска автотестов в Jenkins
 #### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/tests_12go/">проект</a>
 
-![This is an image](/asia_12go_projects_tests/resources/screens/Jenkins_main.png)
+![This is an image](/asia_12go_project/resources/screens/Jenkins_main.png)
 
 #### 2. Выбрать пункт **Собрать с параметрами**
 #### 3. В случае необходимости изменить версию браузера
 #### 4. Нажать **Собрать**
 #### 5. Результат запуска сборки можно посмотреть в отчёте Allure
 
-![This is an image](/asia_12go_projects_tests/resources/screens/allure_report.png)
+![This is an image](/asia_12go_project/resources/screens/allure_report.png)
 
 ### Локальный запуск автотестов
 1. Клонируйте репозиторий на свой локальный компьютер при помощи git clone
@@ -68,11 +68,11 @@ allure serve allure-results
 ```
 
 ### Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
-![This is an image](/asia_12go_projects_tests/resources/screens/bot.png)
+![This is an image](/asia_12go_project/resources/screens/bot.png)
 
 ### Интеграция с jira
-![This is an image](/asia_12go_projects_tests/resources/screens/jira.png)
+![This is an image](/asia_12go_project/resources/screens/jira.png)
 
 ### Пример видеозаписи прохождения мобильных тестов тестов
-![This is an image](/asia_12go_projects_tests/resources/screens/mobile.gif)
+![This is an image](/asia_12go_project/resources/screens/mobile.gif)
 

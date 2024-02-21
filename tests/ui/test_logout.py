@@ -1,7 +1,7 @@
 import pytest
-from asia_12go_projects_tests.pages.ui.logout import logout
+from asia_12go_project.pages.ui.logout import logout
 import allure
-from asia_12go_projects_tests.utils.marks import layer
+from asia_12go_project.utils.marks import layer
 
 pytestmark = [
     layer("web")
