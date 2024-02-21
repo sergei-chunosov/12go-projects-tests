@@ -9,7 +9,7 @@ pytestmark = [
 
 
 @pytest.mark.web
-def test_previouse_order():
+def test_logout():
     with allure.step('Авторизовываемся на сайте и ищем предыдущий заказ'):
         logout.open_profile()
 

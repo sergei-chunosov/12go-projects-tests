@@ -1,7 +1,6 @@
-from time import sleep
-
 from selene import browser, have, be
 from pages.api.auth import auth
+from utils.add_cookie_to_browser import add_cookies_to_browser
 
 
 class LogOut:
@@ -9,7 +8,7 @@ class LogOut:
     def open_profile(self):
         browser.open('en')
         cookies = auth.get_cookie()
-        browser.driver.add_cookie({'name': 'autht4', 'value': cookies})
+        add_cookies_to_browser(cookies)
         browser.open('en')
         browser.all('.link').element_by(have.exact_text('Profile')).click()
         browser.all('.vue-dropdown li')[2].click()

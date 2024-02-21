@@ -1,5 +1,6 @@
 from selene import browser, have
 from pages.api.auth import auth
+from utils.add_cookie_to_browser import add_cookies_to_browser
 
 
 class ChangeProfileInfo:
@@ -7,8 +8,7 @@ class ChangeProfileInfo:
     def auth(self):
         browser.open('en')
         cookies = auth.get_cookie()
-        for name, cookie in cookies.items():
-            browser.driver.add_cookie({'name': name, 'value': cookie})
+        add_cookies_to_browser(cookies)
         browser.open('en')
 
     def change_name(self):
