@@ -43,10 +43,7 @@ def setup_browser(request):
         command_executor=f"https://{slogin}:{spassword}@selenoid.autotests.cloud/wd/hub",
         options=options
     )
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 1})
 
-    driver = webdriver.Chrome(chrome_options)
     browser.config.driver = driver
 
     browser.config.base_url = "https://12go.asia/"
