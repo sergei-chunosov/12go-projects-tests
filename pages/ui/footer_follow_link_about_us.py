@@ -15,7 +15,7 @@ class Footer_about_us:
                                                                            ' travel services on a single platform'
                                                                            ' for comparison and interline ticketing.'
                                                                            ' To provide the best results we connect'
-                                                                           ' directly to supplier systems via api.'))
+                                                                           ' directly to supplier systems via API.'))
 
 
 footer_link = Footer_about_us()

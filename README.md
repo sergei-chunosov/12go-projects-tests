@@ -72,4 +72,4 @@ allure serve allure-results
 
 
 ### Пример видеозаписи прохождения мобильных тестов тестов
-![This is an image](/design/mobile.mov)
+![This is an image](/design/screens/mobile.gif)
