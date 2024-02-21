@@ -26,23 +26,23 @@ def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
 
-    # options = Options()
-    # selenoid_capabilities = {
-    #     "browserName": "chrome",
-    #     "browserVersion": browser_version,
-    #     "selenoid:options": {
-    #         "enableVNC": True,
-    #         "enableVideo": True
-    #     }
-    # }
-    # options.capabilities.update(selenoid_capabilities)
-    # slogin = os.getenv('SLOGIN')
-    # spassword = os.getenv('SPASSWORD')
-    # driver = webdriver.Remote(
-    #     command_executor=f"https://{slogin}:{spassword}@selenoid.autotests.cloud/wd/hub",
-    #     options=options
-    # )
-    # browser.config.driver = driver
+    options = Options()
+    selenoid_capabilities = {
+        "browserName": "chrome",
+        "browserVersion": browser_version,
+        "selenoid:options": {
+            "enableVNC": True,
+            "enableVideo": True
+        }
+    }
+    options.capabilities.update(selenoid_capabilities)
+    slogin = os.getenv('SLOGIN')
+    spassword = os.getenv('SPASSWORD')
+    driver = webdriver.Remote(
+        command_executor=f"https://{slogin}:{spassword}@selenoid.autotests.cloud/wd/hub",
+        options=options
+    )
+    browser.config.driver = driver
 
     browser.config.base_url = "https://12go.asia/"
     browser.config.window_width = '1200'
@@ -51,9 +51,9 @@ def setup_browser(request):
 
     yield browser
 
-    # attach.add_screenshot(browser)
-    # attach.add_logs(browser)
-    # attach.add_html(browser)
-    # attach.add_video(browser)
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_html(browser)
+    attach.add_video(browser)
 
     browser.quit()
