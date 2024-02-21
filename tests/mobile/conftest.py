@@ -11,7 +11,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--context",
         required=False,
-        default="bs",
+        default="local",
         choices=['local', 'bs'],
     )
 

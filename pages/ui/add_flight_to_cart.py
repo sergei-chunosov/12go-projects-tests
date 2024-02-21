@@ -30,10 +30,10 @@ class SearchTickets:
 
         browser.element('[data-qa=search-form-submit-button]').click()
 
-        browser.all('[data-qa=other-trips-show-options]').first.click().perform(command.js.scroll_into_view)
+        browser.all('[data-qa=other-trips-show-options]').first.click()\
+            .perform(command.js.scroll_into_view).with_(timeout=10)
 
     def add_ticket_to_cart(self):
-        sleep(4)
         browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click()
         sleep(4)
         browser.element('[data-qa="trip-buy-button"]').click()
