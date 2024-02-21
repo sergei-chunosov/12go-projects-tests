@@ -13,8 +13,8 @@ class Config(BaseModel):
     app: str = os.getenv('app')
     platformName: str = os.getenv('platformName')
     platformVersion: str = os.getenv('platformVersion')
-    userName: str = os.getenv('LOGIN')
-    accessKey: str = os.getenv('PASSWORD')
+    userName: str = os.getenv('BLOGIN')
+    accessKey: str = os.getenv('BPASSWORD')
     bstack_app_id: str = os.getenv('BSTACK_APP_ID')
 
     def to_driver_options(self, context):
