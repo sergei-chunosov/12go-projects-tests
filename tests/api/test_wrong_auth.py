@@ -11,4 +11,4 @@ pytestmark = [
 def test_wrong_auth():
     with allure.step('Проверяем аутентификацию с невалидными данными через api'):
         cookies = auth.get_cookie(user_name='ncrs@test.test', password='123456')
-        assert cookies == None
+        assert cookies['autht4'] == None
