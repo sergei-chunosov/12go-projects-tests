@@ -27,8 +27,8 @@
 ### Проект реализован с использованием
 Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram 
 
-<img src="/12go_projects_tests/resources/python-original.svg" alt="Image 1" width="45" height="45"><img src="/12go_projects_tests/resources/pytest-original.svg" alt="Image 2" width="45" height="45"><img src="/12go_projects_tests/resources/PyCharm_Icon.svg" alt="Image 3" width="45" height="45"><img src="/12go_projects_tests/resources/selenoid.png" alt="Image 4" width="45" height="45"><img src="/12go_projects_tests/resources/jenkins-original.svg" alt="Image 5" width="45" height="45">
-<img src="/12go_projects_tests/resources/allure.png" alt="Image 6" width="45" height="45"><img src="/12go_projects_tests/resources/telegram.svg" alt="Image 7" width="45" height="45">
+<img src="/asia_12go_projects_tests/resources/python-original.svg" alt="Image 1" width="45" height="45"><img src="/asia_12go_projects_tests/resources/pytest-original.svg" alt="Image 2" width="45" height="45"><img src="/asia_12go_projects_tests/resources/PyCharm_Icon.svg" alt="Image 3" width="45" height="45"><img src="/asia_12go_projects_tests/resources/selenoid.png" alt="Image 4" width="45" height="45"><img src="/asia_12go_projects_tests/resources/jenkins-original.svg" alt="Image 5" width="45" height="45">
+<img src="/asia_12go_projects_tests/resources/allure.png" alt="Image 6" width="45" height="45"><img src="/asia_12go_projects_tests/resources/telegram.svg" alt="Image 7" width="45" height="45">
 
 # Запуск автотестов выполняется на сервере Jenkins
 
