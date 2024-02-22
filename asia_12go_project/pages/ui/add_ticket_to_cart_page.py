@@ -34,7 +34,7 @@ class AddTicketToCart:
 
     def add_ticket_to_cart(self):
         browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click()
-        browser.all('[data-qa="trip-buy-button"]').second.click()
+        browser.all('[data-qa="trip-buy-button"]').with_(timeout=10).click()
         browser.element('[data-qa=backBtn]').click()
 
         browser.element('.vue-badge').click()
