@@ -1,6 +1,6 @@
 import pytest
 
-from asia_12go_project.pages.mobile.language_change_to_english import language_change
+from asia_12go_project.pages.mobile.language_change_to_english_page import language_change
 import allure
 
 

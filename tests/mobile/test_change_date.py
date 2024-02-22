@@ -1,12 +1,12 @@
 import pytest
-from asia_12go_project.pages.mobile.change_date import changedate
+from asia_12go_project.pages.mobile.change_date_page import change_date
 import allure
 
 
 @pytest.mark.mobile
 def test_change_date():
     with allure.step('Устанавливаем необходимую дату'):
-        changedate.set_date()
+        change_date.set_date()
 
     with allure.step('Проверяем выбранную дату'):
-        changedate.assert_date()
+        change_date.assert_date()

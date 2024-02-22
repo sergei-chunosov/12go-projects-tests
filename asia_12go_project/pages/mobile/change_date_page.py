@@ -17,4 +17,4 @@ class ChangeDate:
         browser.all((AppiumBy.CLASS_NAME, 'android.widget.Button'))[3].should(have.exact_text(f'{self.date_for_test}'))
 
 
-changedate = ChangeDate()
+change_date = ChangeDate()

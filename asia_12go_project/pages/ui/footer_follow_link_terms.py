@@ -1,7 +1,7 @@
 from selene import browser, have, command
 
 
-class Footer_terms:
+class FooterTerms:
 
     def open(self):
         browser.open('en')
@@ -14,4 +14,4 @@ class Footer_terms:
         browser.element('.markdowned').element('h1').should(have.exact_text('Terms and conditions'))
 
 
-footer_terms = Footer_terms()
+footer_terms = FooterTerms()

@@ -12,4 +12,4 @@ class MirroringDirection:
         browser.all((AppiumBy.CLASS_NAME, 'android.widget.Button'))[2].should(have.exact_text("Koh Samui"))
 
 
-mirroringdirection = MirroringDirection()
+mirroring_direction = MirroringDirection()

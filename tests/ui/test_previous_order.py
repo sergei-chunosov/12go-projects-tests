@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.previous_order import previouseorder
+from asia_12go_project.pages.ui.previous_order import previouse_order
 import allure
 from asia_12go_project.utils.marks import layer
 
@@ -11,7 +11,7 @@ pytestmark = [
 @pytest.mark.web
 def test_previouse_order():
     with allure.step('Авторизовываемся на сайте и ищем предыдущий заказ'):
-        previouseorder.open_previous_order()
+        previouse_order.open_previous_order()
 
     with allure.step('Проверяем предыдущий заказ'):
-        previouseorder.assert_previous_order()
+        previouse_order.assert_previous_order()

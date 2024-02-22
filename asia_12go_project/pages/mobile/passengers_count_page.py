@@ -22,4 +22,4 @@ class PassengersCount:
         browser.all((AppiumBy.CLASS_NAME, 'android.view.View'))[7].should(have.exact_text(' 1 Passenger'))
 
 
-passengerscount = PassengersCount()
+passengers_count = PassengersCount()

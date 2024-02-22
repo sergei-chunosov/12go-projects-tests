@@ -18,4 +18,4 @@ class PreviousOrder:
             .should(have.exact_text('Koh Samui Transfer → Patong Kata Karon Transfer'))
 
 
-previouseorder = PreviousOrder()
+previouse_order = PreviousOrder()

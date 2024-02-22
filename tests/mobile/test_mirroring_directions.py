@@ -1,6 +1,6 @@
 import pytest
-from asia_12go_project.pages.mobile.set_direction import set_directions
-from asia_12go_project.pages.mobile.mirroring_direction import mirroringdirection
+from asia_12go_project.pages.mobile.set_direction_page import set_directions
+from asia_12go_project.pages.mobile.mirroring_direction_page import mirroring_direction
 import allure
 
 
@@ -13,7 +13,7 @@ def test_language_change():
         set_directions.assert_directions()
 
     with allure.step('Меняем направления местами'):
-        mirroringdirection.mirroring_directions()
+        mirroring_direction.mirroring_directions()
 
     with allure.step('Проверяем зеркальную смену направления'):
-        mirroringdirection.assert_mirroring_directions()
+        mirroring_direction.assert_mirroring_directions()

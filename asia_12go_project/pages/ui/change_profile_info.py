@@ -14,8 +14,8 @@ class ChangeProfileInfo:
     def change_name(self):
         browser.all('.link').element_by(have.exact_text('Profile')).click()
         browser.all('.vue-dropdown li').second.click()
-        browser.element('[name="name"]').click().clear()
-        browser.element('[name="name"]').click().type('Sergei Chunosov')
+        browser.element('[name="name"]').click().clear().type('Sergei Chunosov')
+        # browser.element('[name="name"]').click().type('Sergei Chunosov')
 
     def assert_change_name(self):
         name = browser.element('[name="name"]').locate().get_attribute('value')

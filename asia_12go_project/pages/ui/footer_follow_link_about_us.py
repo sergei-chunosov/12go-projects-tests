@@ -1,7 +1,7 @@
 from selene import browser, have, command
 
 
-class Footer_about_us:
+class FooterAboutUs:
 
     def open(self):
         browser.open('en')
@@ -18,4 +18,4 @@ class Footer_about_us:
                                                                            ' directly to supplier systems via API.'))
 
 
-footer_link = Footer_about_us()
+footer_link = FooterAboutUs()

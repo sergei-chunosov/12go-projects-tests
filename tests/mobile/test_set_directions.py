@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.mobile.set_direction import set_directions
+from asia_12go_project.pages.mobile.set_direction_page import set_directions
 import allure
 
 
