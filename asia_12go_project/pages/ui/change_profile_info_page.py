@@ -1,5 +1,5 @@
 from selene import browser, have
-from asia_12go_project.utils.auth import auth
+from asia_12go_project.utils.api_requests import get_cookie
 from asia_12go_project.utils.add_cookie_to_browser import add_cookies_to_browser
 
 
@@ -7,7 +7,7 @@ class ChangeProfileInfo:
 
     def auth(self):
         browser.open('en')
-        cookies = auth.get_cookie()
+        cookies = get_cookie()
         add_cookies_to_browser(cookies)
         browser.open('en')
 

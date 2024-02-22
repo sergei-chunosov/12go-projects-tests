@@ -53,11 +53,11 @@ def delete_request(url, json):
 
 
 def get_cookie(url, user_name=user_name, password=password):
-    base_url = "https://12go.asia"
+    url = "https://12go.asia/api/nuxt/en/user/auth"
     with step(f"POST {url}"):
         session = requests.Session()
         jsonAuth = json.dumps({"email": user_name, "password": password}, ensure_ascii=False).encode('utf8')
-        response = session.post(base_url + url, jsonAuth)
+        response = session.post(url, jsonAuth)
         curl = curlify.to_curl(response.request)
         cookies = response.cookies.get_dict()
         logging.info(curlify.to_curl(response.request))
