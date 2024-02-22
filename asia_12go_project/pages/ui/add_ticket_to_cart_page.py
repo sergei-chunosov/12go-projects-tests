@@ -32,9 +32,9 @@ class AddTicketToCart:
             .perform(command.js.scroll_into_view).with_(timeout=10)
 
     def add_ticket_to_cart(self):
-        browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click()
+        browser.all('[data-qa="trip-time dep"]').with_(timeout=10).element_by(have.text('06:10')).click()
         browser.element('[data-qa="trip-buy-button"]').click()
-        browser.element('[data-qa=backBtn]').click()
+        browser.element('[data-qa=backBtn]').with_(timeout=10).click()
 
         browser.element('.vue-badge').click()
 
