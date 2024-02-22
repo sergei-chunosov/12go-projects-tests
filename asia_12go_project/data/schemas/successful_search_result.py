@@ -1,7 +1,6 @@
 successful_search_result = {
     "$schemas": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    # "additionalProperties": False,
     "properties": {
         "type": {
             "type": "string"
