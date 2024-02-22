@@ -12,7 +12,3 @@ def date_halper():
         page = 2
 
     return day, page, date_for_test
-
-
-day, date_for_test, page = date_halper()
-print(day, date_for_test, page)
