@@ -1,6 +1,6 @@
 import pytest
 from asia_12go_project.data.ui.user_data import flight
-from asia_12go_project.pages.ui.add_flight_to_cart_page import search_tickets
+from asia_12go_project.pages.ui.add_ticket_to_cart_page import add_ticket_to_cart
 import allure
 from asia_12go_project.utils.marks import layer
 
@@ -12,13 +12,13 @@ pytestmark = [
 @pytest.mark.web
 def test_add_ticket():
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
-        search_tickets.open()
+        add_ticket_to_cart.open()
 
     with allure.step('Ищем подходящий рейс'):
-        search_tickets.search_flight()
+        add_ticket_to_cart.search_flight()
 
     with allure.step('Добавляем билет в карзину'):
-        search_tickets.add_ticket_to_cart()
+        add_ticket_to_cart.add_ticket_to_cart()
 
     with allure.step('Проверяем билет'):
-        search_tickets.assert_ticket(flight)
+        add_ticket_to_cart.assert_ticket(flight)

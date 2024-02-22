@@ -5,14 +5,12 @@ from datetime import date, timedelta
 from asia_12go_project.data.ui.user_data import Flight
 
 
-class SearchTickets:
-
+class AddTicketToCart:
 
     def open(self):
         browser.open('en')
 
     def search_flight(self):
-        sleep(3)
         browser.all('[data-qa=select-button]').first.type('Bangkok')
         browser.element('[data-qa=select-list]').all('li').first.click()
 
@@ -30,14 +28,12 @@ class SearchTickets:
 
         browser.element('[data-qa=search-form-submit-button]').click()
 
-        browser.all('[data-qa=other-trips-show-options]').first.click()\
+        browser.all('[data-qa=other-trips-show-options]').first.click() \
             .perform(command.js.scroll_into_view).with_(timeout=10)
 
     def add_ticket_to_cart(self):
         browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click()
-        sleep(4)
         browser.element('[data-qa="trip-buy-button"]').click()
-        sleep(4)
         browser.element('[data-qa=backBtn]').click()
 
         browser.element('.vue-badge').click()
@@ -54,4 +50,5 @@ class SearchTickets:
             flight.arrival_time
         ))
 
-search_tickets = SearchTickets()
+
+add_ticket_to_cart = AddTicketToCart()
