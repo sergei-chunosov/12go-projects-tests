@@ -57,8 +57,12 @@ def get_cookie(url, user_name=user_name, password=password):
     with step(f"POST {url}"):
         session = requests.Session()
         jsonAuth = json.dumps({"email": user_name, "password": password}, ensure_ascii=False).encode('utf8')
-        # url = 'https://12go.asia/api/nuxt/en/user/auth'
-        response = session.post(url, jsonAuth)
+        response = session.post(base_url + url, jsonAuth)
         curl = curlify.to_curl(response.request)
         cookies = response.cookies.get_dict()
+        logging.info(curlify.to_curl(response.request))
+        logging.info(response.request.url)
+        logging.info(response.status_code)
+        logging.info(response.text)
+        allure.attach(body=curl, name="curl", attachment_type=AttachmentType.TEXT, extension="txt")
         return cookies
