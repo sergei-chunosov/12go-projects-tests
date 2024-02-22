@@ -52,7 +52,7 @@ def delete_request(url, json):
     return response
 
 
-def get_cookie(url, user_name=user_name, password=password):
+def get_cookie(user_name=user_name, password=password):
     url = "https://12go.asia/api/nuxt/en/user/auth"
     with step(f"POST {url}"):
         session = requests.Session()
