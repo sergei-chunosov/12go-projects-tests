@@ -24,7 +24,6 @@ class Config(BaseModel):
             options.set_capability('platformName', self.platformName)
             options.set_capability('remote_url', self.remote_url)
             options.set_capability('app', file.abs_path_from_project(self.app))
-            print(file.abs_path_from_project(self.app))
 
         if context == 'bs':
             options.set_capability('remote_url', self.remote_url)
@@ -41,7 +40,6 @@ class Config(BaseModel):
                     'accessKey': self.accessKey,
                 },
             )
-
 
         return options
 
