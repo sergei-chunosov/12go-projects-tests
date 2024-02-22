@@ -1,11 +1,11 @@
 import pytest
 
-from asia_12go_project.pages.mobile.currency_change_to_thb_page import change_currency
+from asia_12go_project.pages.mobile.currency_change_currency_to_thb_page import change_currency
 import allure
 
 
 @pytest.mark.mobile
-def test_currency():
+def test_change_currency():
     with allure.step('Выбираем необходимую валюту'):
         change_currency.change_currency()
 

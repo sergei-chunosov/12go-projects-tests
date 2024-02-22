@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.currency_change_to_thb_page import change_currency
+from asia_12go_project.pages.ui.currency_change_currency_to_thb_page import change_currency
 import allure
 from asia_12go_project.utils.marks import layer
 
@@ -9,7 +9,7 @@ pytestmark = [
 
 
 @pytest.mark.web
-def test_currency():
+def test_change_currency():
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         change_currency.open()
 
