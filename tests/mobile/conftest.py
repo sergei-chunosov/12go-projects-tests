@@ -28,7 +28,7 @@ def context(request):
 
 @pytest.fixture(scope='function', autouse=True)
 def android_mobile_management(context):
-    from data.mobile.config import config
+    from config import config
 
     options = config.to_driver_options(context=context)
 

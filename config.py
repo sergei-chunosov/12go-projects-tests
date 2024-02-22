@@ -24,6 +24,7 @@ class Config(BaseModel):
             options.set_capability('platformName', self.platformName)
             options.set_capability('remote_url', self.remote_url)
             options.set_capability('app', file.abs_path_from_project(self.app))
+            print(file.abs_path_from_project(self.app))
 
         if context == 'bs':
             options.set_capability('remote_url', self.remote_url)
@@ -31,7 +32,6 @@ class Config(BaseModel):
             options.set_capability('platformName', self.platformName)
             options.set_capability('platformVersion', self.platformVersion)
             options.set_capability('app', self.app)
-            # options.set_capability('bstack_app_id', self.bstack_app_id)
             options.set_capability(
                 'bstack:options', {
                     'projectName': 'First Python project',
