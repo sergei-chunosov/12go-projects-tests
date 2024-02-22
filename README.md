@@ -77,5 +77,5 @@ allure serve allure-results
 ### Пример видеозаписи прохождения мобильных тестов тестов
 ![This is an image](/resources/screens/mobile.gif)
 
-###Пример видеозаписи прохождения мобильных тестов тестов
+### Пример видеозаписи прохождения мобильных тестов тестов
 ![This is an image](/resources/screens/web.gif)
