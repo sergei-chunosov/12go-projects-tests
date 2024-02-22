@@ -26,7 +26,7 @@
 ### Структура проекта
 
 ### Проект реализован с использованием
-Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram 
+Python Pytest PyCharm Selenoid Selene Jenkins Allure Report Telegram AllureTestOps 
 
 <img src="/resources/python-original.svg" alt="Image 1" width="45" height="45"><img src="/resources/pytest-original.svg" alt="Image 2" width="45" height="45"><img src="/resources/PyCharm_Icon.svg" alt="Image 3" width="45" height="45"><img src="/resources/selenoid.png" alt="Image 4" width="45" height="45"><img src="/resources/jenkins-original.svg" alt="Image 5" width="45" height="45">
 <img src="/resources/allure.png" alt="Image 6" width="45" height="45"><img src="/resources/telegram.svg" alt="Image 7" width="45" height="45"><img src="/resources/AllureTestOps.png" alt="Image 8" width="45" height="45">
