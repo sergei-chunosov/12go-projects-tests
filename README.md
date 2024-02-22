@@ -78,4 +78,4 @@ allure serve allure-results
 ![This is an image](/resources/screens/mobile.gif)
 
 ###Пример видеозаписи прохождения мобильных тестов тестов
-![This is an image](/resources/screens/web.html)
+![This is an image](/resources/screens/web.gif)
