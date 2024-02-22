@@ -1,6 +1,6 @@
 import pytest
 
-from asia_12go_project.pages.mobile.currency_change_to_THB_page import change_currency
+from asia_12go_project.pages.mobile.currency_change_to_thb_page import change_currency
 import allure
 
 
