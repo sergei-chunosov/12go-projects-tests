@@ -9,7 +9,7 @@ import curlify
 def post_request(url, json):
     base_url = "https://12go.asia"
     with step(f"POST {url}"):
-        response = requests.post(base_url + url, json=data)
+        response = requests.post(base_url + url, json=json)
         curl = curlify.to_curl(response.request)
         logging.info(curlify.to_curl(response.request))
         logging.info(response.request.url)
@@ -35,7 +35,7 @@ def get_request(url):
 def delete_request(url, json):
     base_url = "https://12go.asia"
     with step(f"POST {url}"):
-        response = requests.delete(base_url + url, json=data)
+        response = requests.delete(base_url + url, json=json)
         curl = curlify.to_curl(response.request)
         logging.info(curlify.to_curl(response.request))
         logging.info(response.request.url)
