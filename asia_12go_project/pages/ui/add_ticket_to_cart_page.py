@@ -28,8 +28,6 @@ class AddTicketToCart:
 
         browser.element('[data-qa=search-form-submit-button]').click()
 
-        # browser.all('[data-qa=other-trips-show-options]').first.click() \
-        #     .perform(command.js.scroll_into_view)
         browser.all('[data-qa=other-trips-show-options]').first.perform(command.js.scroll_into_view).click()
 
     def add_ticket_to_cart(self):
