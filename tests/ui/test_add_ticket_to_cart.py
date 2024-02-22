@@ -12,7 +12,6 @@ pytestmark = [
 
 @allure.epic('Search for ticket')
 @allure.story('add ticket to cart')
-@allure.title('assert ticket in cart')
 @pytest.mark.web
 def test_add_ticket():
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
