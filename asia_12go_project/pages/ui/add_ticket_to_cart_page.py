@@ -35,7 +35,7 @@ class AddTicketToCart:
         browser.element('[data-qa="trip-buy-button"]').with_(timeout=10).click()
         browser.element('[data-qa=backBtn]').click()
 
-        browser.element('.vue-badge').click()
+        browser.element('.vue-badge').perform(command.js.scroll_into_view).click()
 
     def assert_ticket(self, flight: Flight):
         browser.all('.trip-points-line-desc').all('span').should(have.exact_texts(
