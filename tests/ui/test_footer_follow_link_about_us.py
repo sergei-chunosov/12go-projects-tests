@@ -1,6 +1,6 @@
 import allure
 import pytest
-from asia_12go_project.pages.ui.footer_follow_link_about_us import footer_link
+from asia_12go_project.pages.ui.footer_follow_link_about_us_page import footer_link
 from asia_12go_project.utils.marks import layer
 
 pytestmark = [

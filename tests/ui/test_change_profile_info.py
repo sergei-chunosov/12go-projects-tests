@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.change_profile_info import change_profile_info
+from asia_12go_project.pages.ui.change_profile_info_page import change_profile_info
 import allure
 from asia_12go_project.utils.marks import layer
 

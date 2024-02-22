@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.logout import logout
+from asia_12go_project.pages.ui.logout_page import logout
 import allure
 from asia_12go_project.utils.marks import layer
 

@@ -1,11 +1,7 @@
 import pytest
-from asia_12go_project.pages.api.auth import auth
+from asia_12go_project.utils.auth import auth
 import allure
-from asia_12go_project.utils.marks import layer
 
-pytestmark = [
-    layer("api")
-]
 
 @pytest.mark.api
 def test_auth():

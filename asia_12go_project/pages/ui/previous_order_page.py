@@ -1,5 +1,5 @@
 from selene import browser, have
-from asia_12go_project.pages.api.auth import auth
+from asia_12go_project.utils.auth import auth
 from asia_12go_project.utils.add_cookie_to_browser import add_cookies_to_browser
 
 

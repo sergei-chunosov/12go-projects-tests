@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.currency_change_to_thb import change_currency
+from asia_12go_project.pages.ui.currency_change_to_thb_page import change_currency
 import allure
 from asia_12go_project.utils.marks import layer
 

@@ -32,7 +32,6 @@ def android_mobile_management(context):
 
     options = config.to_driver_options(context=context)
 
-
     with allure.step('setup app session'):
         browser.config.driver = webdriver.Remote(
             options.get_capability('remote_url'),
@@ -40,7 +39,6 @@ def android_mobile_management(context):
         )
 
     browser.config.timeout = 12.0
-
 
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext)

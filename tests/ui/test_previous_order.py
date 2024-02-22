@@ -1,5 +1,5 @@
 import pytest
-from asia_12go_project.pages.ui.previous_order import previouse_order
+from asia_12go_project.pages.ui.previous_order_page import previouse_order
 import allure
 from asia_12go_project.utils.marks import layer
 
