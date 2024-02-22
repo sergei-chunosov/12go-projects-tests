@@ -31,7 +31,7 @@ class AddTicketToCart:
         browser.all('[data-qa=other-trips-show-options]').first.perform(command.js.scroll_into_view).click()
 
     def add_ticket_to_cart(self):
-        browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click()
+        browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click().with_(timeout=10)
         browser.element('[data-qa="trip-buy-button"]').with_(timeout=10).click()
         browser.element('[data-qa=backBtn]').click()
 
