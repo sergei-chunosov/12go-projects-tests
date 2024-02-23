@@ -5,4 +5,3 @@ def get_number_of_trip(response, trip_key):
             break
         i += 1
     return i
-
