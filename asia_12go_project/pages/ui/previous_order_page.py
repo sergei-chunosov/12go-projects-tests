@@ -7,7 +7,7 @@ class PreviousOrder:
 
     def open_previous_order(self):
         browser.open('en')
-        cookies = get_cookie()
+        cookies = get_cookie()[0]
         add_cookies_to_browser(cookies)
         browser.open('en')
         browser.all('.link').element_by(have.exact_text('Profile')).click()

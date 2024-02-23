@@ -1,5 +1,3 @@
-from time import sleep
-
 from selene import browser, have, command
 from datetime import date, timedelta
 from asia_12go_project.data.ui.user_data import Flight
@@ -33,7 +31,6 @@ class AddTicketToCart:
     def add_ticket_to_cart(self):
         browser.all('[data-qa="trip-time dep"]').element_by(have.text('06:10')).click().with_(timeout=10)
         browser.element('[data-qa="trip-buy-button"]').click()
-        # browser.element('[data-qa=backBtn]').click()
 
         browser.element('.vue-badge').click()
 

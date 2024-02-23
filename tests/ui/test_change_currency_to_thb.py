@@ -1,11 +1,6 @@
 import pytest
 from asia_12go_project.pages.ui.currency_change_currency_to_thb_page import change_currency
 import allure
-from asia_12go_project.utils.marks import layer
-
-pytestmark = [
-    layer("web")
-]
 
 
 @pytest.mark.web

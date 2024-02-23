@@ -1,11 +1,6 @@
 import pytest
 from asia_12go_project.pages.ui.language_change_to_english_page import language_change
 import allure
-from asia_12go_project.utils.marks import layer
-
-pytestmark = [
-    layer("web")
-]
 
 @pytest.mark.web
 def test_language_change():

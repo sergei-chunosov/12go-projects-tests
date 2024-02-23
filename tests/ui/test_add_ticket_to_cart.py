@@ -2,11 +2,6 @@ import pytest
 from asia_12go_project.data.ui.user_data import flight
 from asia_12go_project.pages.ui.add_ticket_to_cart_page import add_ticket_to_cart
 import allure
-from asia_12go_project.utils.marks import layer
-
-pytestmark = [
-    layer("web")
-]
 
 
 

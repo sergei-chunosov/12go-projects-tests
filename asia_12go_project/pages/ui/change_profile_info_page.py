@@ -7,7 +7,7 @@ class ChangeProfileInfo:
 
     def auth(self):
         browser.open('en')
-        cookies = get_cookie()
+        cookies = get_cookie()[0]
         add_cookies_to_browser(cookies)
         browser.open('en')
 

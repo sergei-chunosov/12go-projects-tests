@@ -1,12 +1,9 @@
-import logging
-import allure
 import requests
 from allure_commons._allure import step
-from allure_commons.types import AttachmentType
-import curlify
 from dotenv import load_dotenv
 import os
 import json
+from asia_12go_project.utils.logging_helper import logging_helper
 
 load_dotenv()
 user_name = os.environ.get('LOGIN')
@@ -17,12 +14,7 @@ def post_request(url, json):
     base_url = "https://12go.asia"
     with step(f"POST {url}"):
         response = requests.post(base_url + url, json=json)
-        curl = curlify.to_curl(response.request)
-        logging.info(curlify.to_curl(response.request))
-        logging.info(response.request.url)
-        logging.info(response.status_code)
-        logging.info(response.text)
-        allure.attach(body=curl, name="curl", attachment_type=AttachmentType.TEXT, extension="txt")
+        logging_helper(response)
     return response
 
 
@@ -30,12 +22,7 @@ def get_request(url):
     base_url = "https://12go.asia"
     with step(f"POST {url}"):
         response = requests.get(base_url + url)
-        curl = curlify.to_curl(response.request)
-        logging.info(curlify.to_curl(response.request))
-        logging.info(response.request.url)
-        logging.info(response.status_code)
-        logging.info(response.text)
-        allure.attach(body=curl, name="curl", attachment_type=AttachmentType.TEXT, extension="txt")
+        logging_helper(response)
     return response
 
 
@@ -43,12 +30,7 @@ def delete_request(url, json):
     base_url = "https://12go.asia"
     with step(f"POST {url}"):
         response = requests.delete(base_url + url, json=json)
-        curl = curlify.to_curl(response.request)
-        logging.info(curlify.to_curl(response.request))
-        logging.info(response.request.url)
-        logging.info(response.status_code)
-        logging.info(response.text)
-        allure.attach(body=curl, name="curl", attachment_type=AttachmentType.TEXT, extension="txt")
+        logging_helper(response)
     return response
 
 
@@ -58,11 +40,6 @@ def get_cookie(user_name=user_name, password=password):
         session = requests.Session()
         jsonAuth = json.dumps({"email": user_name, "password": password}, ensure_ascii=False).encode('utf8')
         response = session.post(url, jsonAuth)
-        curl = curlify.to_curl(response.request)
         cookies = response.cookies.get_dict()
-        logging.info(curlify.to_curl(response.request))
-        logging.info(response.request.url)
-        logging.info(response.status_code)
-        logging.info(response.text)
-        allure.attach(body=curl, name="curl", attachment_type=AttachmentType.TEXT, extension="txt")
-        return cookies
+        logging_helper(response)
+        return cookies, response
