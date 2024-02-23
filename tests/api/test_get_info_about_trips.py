@@ -20,10 +20,9 @@ def test_get_info_about_trips():
               '&csrf=sIht2g' \
               '&direction=forward'
         response = get_request(url)
-        i = 0
         trip_key = 'TH01xL01xR004a00l028QSB9'
 
-        get_number_of_trip(response, trip_key)
+        i = get_number_of_trip(response.json(), trip_key)
 
         trip_id = response.json()['trips'][i]['segments'][0]['trip_id']
         schema = response.json()['trips'][i]['segments'][0]

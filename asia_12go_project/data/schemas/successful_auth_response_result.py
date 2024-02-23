@@ -49,8 +49,5 @@ successful_auth_response_result = {
                 "role"
             ]
         }
-    },
-    "required": [
-        "user"
-    ]
+    }
 }
