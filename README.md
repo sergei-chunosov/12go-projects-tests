@@ -80,8 +80,8 @@ allure serve allure-results
 ### Интеграция с Allure TestOps
 ![This is an image](/resources/screens/TestOps.png)
 
-### Пример видеозаписи прохождения мобильных тестов тестов
+### Пример видеозаписи прохождения мобильных тестов
 ![This is an image](/resources/screens/mobile.gif)
 
-### Пример видеозаписи прохождения мобильных тестов тестов
+### Пример видеозаписи прохождения web тестов
 ![This is an image](/resources/screens/web.gif)
